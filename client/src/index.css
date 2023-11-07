@@ -10,18 +10,8 @@
     
 }
 
-.map {
-    width: 100vw;
-    height: 100vh;
-}
-
 body {
     background-color: #000814;
 }
 
-.ui {
-    position: absolute;
-    width: calc(100vw - 40px);
-    z-index: 10;
-    margin: 20px;
-}
+

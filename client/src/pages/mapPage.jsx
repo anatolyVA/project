@@ -2,7 +2,7 @@ import Map from "../components/Map";
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 import BlackLogo from "./BlackLogo.svg";
-import "../index.css";
+import "./style.css";
 
 export default function MapPage() {
   return (

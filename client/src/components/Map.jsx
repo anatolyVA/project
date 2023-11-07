@@ -10,7 +10,7 @@ export default function Map() {
       map = new mapglAPI.Map("map-container", {
         center: [54.78782130341394, 32.05245062677451],
         zoom: 9,
-        key: "5aefc340-8c74-4047-ab92-dbb80efe4d8c",
+        key: "",
       });
     });
 

@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { authRoutes, publicRoutes } from "../routes";
-import { MAINPAGE_ROUTE } from "../utils/const";
+import { HOMEPAGE_ROUTE } from "../utils/const";
 import { useContext } from "react";
 import { Context } from "../main";
 
@@ -17,7 +17,7 @@ export default function AppRouter() {
       {publicRoutes.map(({ path, Component }) => (
         <Route key={path} path={path} element={<Component />} exact />
       ))}
-      <Route path="*" element={<Navigate to={MAINPAGE_ROUTE} />} />
+      <Route path="*" element={<Navigate to={HOMEPAGE_ROUTE} />} />
     </Routes>
   );
 }

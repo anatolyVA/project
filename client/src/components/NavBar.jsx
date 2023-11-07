@@ -1,17 +1,16 @@
 import "./style.css";
 import PropTypes from "prop-types";
-import { LOGIN_ROUTE, MAINPAGE_ROUTE, REGISTATION_ROUTE } from "../utils/const";
+import { LOGIN_ROUTE, HOMEPAGE_ROUTE, REGISTATION_ROUTE } from "../utils/const";
 import { NavLink } from "react-router-dom";
-
 
 const NavBar = ({ type, logo }) => {
   return (
     <div className={`navbar ${type}`}>
       <div className="navlinks">
-        <a href={MAINPAGE_ROUTE}>
+        <a href={HOMEPAGE_ROUTE}>
           <img src={logo} className="icon" />
         </a>
-        <NavLink to={MAINPAGE_ROUTE}>Таблица лидеров</NavLink>
+        <NavLink to={HOMEPAGE_ROUTE}>Таблица лидеров</NavLink>
       </div>
       <div className="navbuttons">
         <NavLink className="button" to={LOGIN_ROUTE}>
