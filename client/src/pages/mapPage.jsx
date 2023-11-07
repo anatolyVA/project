@@ -1,6 +1,6 @@
-import Map from "../components/Map";
-import NavBar from "../components/NavBar";
-import SideBar from "../components/SideBar";
+import Map from "../components/Map/Map";
+import NavBar from "../components/NavBar/NavBar";
+import SideBar from "../components/SideBar/SideBar";
 import BlackLogo from "./BlackLogo.svg";
 import "./style.css";
 

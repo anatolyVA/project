@@ -1,0 +1,106 @@
+:root {
+  --primaryactive: rgba(197, 130, 20, 1);
+  --primarydefault: rgba(252, 163, 17, 1);
+  --primaryhover: rgba(255, 188, 79, 1);
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: 200ms ease-out;
+}
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button_filled {
+  border: none;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--primarydefault);
+}
+.button_filled:hover {
+  background-color: var(--primaryhover);
+}
+.button_filled:active {
+  background-color: var(--primaryactive);
+}
+
+.button_outlined-dark {
+  border: 2px solid black;
+  background-color: none;
+}
+.button_outlined-light {
+  border: 2px solid white;
+  background-color: none;
+  color: white;
+}
+.button_outlined-dark:hover,
+.button_outlined-light:hover {
+  border-color: var(--primaryhover);
+  background-color: var(--primaryhover);
+  color: black;
+}
+.button_outlined-dark:active,
+.button_outlined-light:active {
+  border-color: var(--primaryactive);
+  background-color: var(--primaryactive);
+}
+
+.button_text-dark {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.button_text-dark:hover {
+  background-color: rgba(255, 188, 79, 0.2);
+  color: rgba(0, 0, 0, 0.75);
+}
+.button_text-dark:active {
+  background-color: rgba(197, 130, 20, 0.4);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.button_text-light {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+.button_text-light:hover {
+  background-color: rgba(255, 188, 79, 0.2);
+  color: rgba(255, 255, 255, 0.75);
+}
+.button_text-light:active {
+  background-color: rgba(197, 130, 20, 0.4);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.button_tonal {
+  background: rgba(252, 163, 17, 0.2);
+}
+.button_tonal:hover {
+  background: rgba(255, 188, 79, 0.4);
+}
+.button_tonal:active {
+  background: rgba(197, 130, 20, 0.6);
+}
+
+.button_small {
+  border-radius: 4px;
+  height: 32px;
+  padding: 0px 8px;
+  font-size: 12px;
+}
+.button_medium {
+  height: 48px;
+  padding: 0px 32px;
+  font-size: 14px;
+}
+.button_large {
+  height: 64px;
+  padding: 0px 48px;
+  font-size: 18px;
+}
