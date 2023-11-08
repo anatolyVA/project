@@ -8,6 +8,8 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  background: none;
+  border: none;
   appearance: none;
   display: inline-flex;
   align-items: center;

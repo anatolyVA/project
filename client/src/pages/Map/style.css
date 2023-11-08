@@ -1,0 +1,12 @@
+.map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ui {
+  position: absolute;
+  min-height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  z-index: 10;
+  padding: 20px 40px;
+}

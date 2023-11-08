@@ -1,0 +1,53 @@
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  min-width: calc(100vw - 20px);
+  padding: 20px 40px;
+  gap: 120px;
+}
+
+.auth-page_content {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+  min-width: 1000px;
+}
+
+.content_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.content_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.text-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.auth-navlink {
+  color: rgba(252, 163, 17, 1);
+  font-size: 14;
+}

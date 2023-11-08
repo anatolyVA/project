@@ -1,0 +1,17 @@
+
+.tab-button {
+    border: none;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    background-color: transparent;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 200ms ease-out;
+}
+.tab-button:hover{
+    color: white;
+    border-bottom: 4px solid var(--primarydefault);
+}.tab-button_active{
+    color: white;
+    border-bottom: 4px solid var(--primarydefault);
+}

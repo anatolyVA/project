@@ -1,17 +1,11 @@
 import "./style.css";
-import PropTypes from "prop-types";
 
 const Button = ({ text, onClick, className }) => {
   return (
-    <button className={className} onClick={onClick}>
+    <button className={`button ${className}`} onClick={onClick}>
       {text}
     </button>
   );
-};
-
-Button.propTypes = {
-  text: PropTypes.string,
-  onClick: PropTypes.func.isRequired
 };
 
 export default Button;

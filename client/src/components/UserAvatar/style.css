@@ -1,0 +1,12 @@
+.user-avatar{
+    border-radius: 16px;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.user-avatar_none{
+    background-color: white;
+}

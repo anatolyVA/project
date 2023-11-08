@@ -3,3 +3,4 @@ export const LOGIN_ROUTE = "/login";
 export const HOMEPAGE_ROUTE = "/home";
 export const MAPPAGE_ROUTE = "/map";
 export const PROFILE_ROUTE = "/profile";
+export const DESCRPPAGE_ROUTE = "/description";
