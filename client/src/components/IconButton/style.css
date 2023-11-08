@@ -1,0 +1,87 @@
+.iconbutton {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: 200ms ease-out;
+  width: 48px;
+  height: 48px;
+}
+.iconbutton:disabled {
+  opacity: 0.5;
+}
+
+.iconbutton_filled {
+  border: none;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--primarydefault);
+}
+.iconbutton_filled:hover {
+  background-color: var(--primaryhover);
+}
+.iconbutton_filled:active {
+  background-color: var(--primaryactive);
+}
+
+.iconbutton_outlined-dark {
+  border: 2px solid black;
+  background-color: none;
+}
+.iconbutton_outlined-light {
+  border: 2px solid white;
+  background-color: none;
+  color: white;
+}
+.iconbutton_outlined-dark:hover,
+.iconbutton_outlined-light:hover {
+  border-color: var(--primaryhover);
+  background-color: var(--primaryhover);
+  color: black;
+}
+.iconbutton_outlined-dark:active,
+.iconbutton_outlined-light:active {
+  border-color: var(--primaryactive);
+  background-color: var(--primaryactive);
+}
+
+.iconbutton_text-dark {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.iconbutton_text-dark:hover {
+  background-color: rgba(255, 188, 79, 0.2);
+  color: rgba(0, 0, 0, 0.75);
+}
+.iconbutton_text-dark:active {
+  background-color: rgba(197, 130, 20, 0.4);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.iconbutton_text-light {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+.iconbutton_text-light:hover {
+  background-color: rgba(255, 188, 79, 0.2);
+  color: rgba(255, 255, 255, 0.75);
+}
+.iconbutton_text-light:active {
+  background-color: rgba(197, 130, 20, 0.4);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.iconbutton_tonal {
+  background: rgba(252, 163, 17, 0.2);
+}
+.iconbutton_tonal:hover {
+  background: rgba(255, 188, 79, 0.4);
+}
+.iconbutton_tonal:active {
+  background: rgba(197, 130, 20, 0.6);
+}

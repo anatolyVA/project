@@ -10,6 +10,8 @@ import { useContext } from "react";
 import { Context } from "../../main";
 import { observer } from "mobx-react-lite";
 import Button from "../Button/Button";
+import IconButton from "../IconButton/IconButton";
+import { BiUser, BiExit } from "react-icons/bi";
 
 const NavBar = observer(({ type, logo }) => {
   const { user } = useContext(Context);
@@ -20,20 +22,22 @@ const NavBar = observer(({ type, logo }) => {
         <a className="homelink" href={HOMEPAGE_ROUTE}>
           <img src={logo} className="icon" />
         </a>
-        <NavLink className={"navlink"} to={HOMEPAGE_ROUTE}>
-          Таблица лидеров
-        </NavLink>
+        <NavLink className={"navlink"}>Таблица лидеров</NavLink>
       </div>
       {user.isAuth ? (
         <div className="navbuttons">
-          <NavLink className="button button_text-light button_medium" to={PROFILE_ROUTE}>
-            Профиль
+          <NavLink
+            className="iconbutton iconbutton_text-light"
+            to={PROFILE_ROUTE}
+          >
+            <BiUser size={"1.5em"} />
           </NavLink>
-          <Button
-            text={"Выйти"}
-            className={"button button_filled button_medium"}
+          <NavLink
+            className={"iconbutton iconbutton_text-light"}
             onClick={() => user.setIsAuth(false)}
-          ></Button>
+          >
+            <BiExit size={"1.5em"} />
+          </NavLink>
         </div>
       ) : (
         <div className="navbuttons">

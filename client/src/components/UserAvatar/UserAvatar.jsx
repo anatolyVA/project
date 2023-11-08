@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css'
+import {BiPencil} from 'react-icons/bi'
 
 const UserAvatar = ({avatar}) => {
   return (
@@ -10,7 +11,7 @@ const UserAvatar = ({avatar}) => {
           style={{ background: `url(${avatar})` }}
         ></div>
       ) : (
-        <div className="user-avatar user-avatar_none">Icn</div>
+        <div className="user-avatar user-avatar_none"><BiPencil size={'1.5em'}/></div>
       )}
 
     </>
