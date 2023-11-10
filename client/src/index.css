@@ -27,4 +27,17 @@ body {
     background-color: #000814;
 }
 
+:root {
+    --primary-default: #0A6CFF;
+    --primary-hover: #4791FF;
+    --primary-active: #0052CC;
+  
+    --primary-tonalbtn-default: rgba(10, 108, 255, 0.20);
+    --primary-tonalbtn-hover: rgba(71, 145, 255, 0.40);
+    --primary-tonalbtn-active: rgba(0, 82, 204, 0.60);
+  
+    --primary-textbtn-hover: rgba(71, 145, 255, 0.20);
+    --primary-textbtn-active: rgba(0, 82, 204, 0.40);
+  }
+
 

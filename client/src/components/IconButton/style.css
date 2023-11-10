@@ -1,7 +1,7 @@
 .iconbutton {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
   background: none;
   border: none;
   appearance: none;
@@ -20,10 +20,10 @@
 .iconbutton_filled {
   border: none;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-  background-color: var(--primarydefault);
+  background-color: var(--primary-default);
 }
 .iconbutton_filled:hover {
-  background-color: var(--primaryhover);
+  background-color: var(--primary-hover);
 }
 .iconbutton_filled:active {
   background-color: var(--primaryactive);
